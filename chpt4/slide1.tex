@@ -1,0 +1,73 @@
+\documentclass[11pt]{beamer}
+\usetheme{Pittsburgh}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%\author{Author}
+\title{RF Propogation}
+%\setbeamercovered{transparent} 
+%\setbeamertemplate{navigation symbols}{} 
+%\logo{} 
+\institute{BITS Pilani} 
+%\date{} 
+\subject{RF Propogation} 
+\begin{document}
+
+\begin{frame}
+\maketitle
+\end{frame}
+\begin{frame}{Outline}
+  \tableofcontents
+\end{frame}
+
+% Section and subsections will appear in the presentation overview
+% and table of contents.
+\section{First Main Section}
+
+\subsection{First Subsection}
+
+\begin{frame}{Delay Spread}
+\begin{itemize}
+\item Range of propagation delays
+\item Autocorrelation of the channel impulse response $c(t,\tau)$
+\item Can assume channel is Wide Sense Stationary - $c(t,\tau)$ depends on $\Delta t$ [p95]
+\item Attenuation and phase shift with $\tau 1$ uncorrelated with $\tau 2$
+\item $E_r$ multipath intensity profile - transmit impulse - measure received power as function of time [f4.9/4.10]
+\item Inference 
+\begin{enumerate}
+\item weaker power as delay increases  
+\item bumps in delay profile - scatterers not uniform in space 
+\end{enumerate}
+ \item Delay spread can be calculated without knowing the absolute received power levels
+\item Commercial wireless devices scattering insensitive to an extent to RF frequencies
+\end{itemize}
+\end{frame}
+\begin{frame}{Coherence Bandwidth}
+\begin{itemize}
+\item Correlation between channel outputs given the input sinusoids are separated in frequency by $\Delta f$
+\end{itemize}
+\end{frame}
+\begin{frame}{Doppler Model}
+\begin{itemize}
+\item Clark doppler model[p103] used in cellular standards like LTE, LTE-A, WiMAX
+\item WLAN channel dynamics, transmitter and receiver fixed - Clark not used [p104]
+\item Coherence time - max time between two signals - max correlation when received(channel response is same)
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\begin{itemize}
+\item flat fading [p106] - simple multiplication of the transmit signal by a complex gain
+\item Rician fading - recevied signal - fluctuating(scattering) part and non-fluctuating(direct) 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\textbf{Parameters related to tau}
+delay spread and coherence bandwidth . \\
+time dispersion refers to spreading a signal out in the $\tau$ time dimension due to multipath. these two parameters do not provide information about the time-varying nature of the channel. 
+\end{frame}
+
+\end{document}

@@ -6,3 +6,5 @@
 *.gz
 *.out
 *.snm
+*.bbl
+*.blg
